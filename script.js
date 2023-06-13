@@ -21,4 +21,7 @@ document.querySelector('#form').addEventListener('submit', (e) => {
     e.target.reset();
 });
 
-function displayUser(users){}
+function displayUser(users){
+    const userOutput = document.querySelector('#user-output')
+    userOutput.innerHTML = '';
+}
