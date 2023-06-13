@@ -24,4 +24,8 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 function displayUser(users){
     const userOutput = document.querySelector('#user-output')
     userOutput.innerHTML = '';
+
+    users.map((user) => {
+        
+    })
 }
