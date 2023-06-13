@@ -15,4 +15,6 @@ document.querySelector('#form').addEventListener('submit', (e) => {
         name: name,
         img: img
     }
+
+    taskList.push(newUser);
 })
