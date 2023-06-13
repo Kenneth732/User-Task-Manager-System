@@ -21,6 +21,10 @@ document.querySelector('#form').addEventListener('submit', (e) => {
     e.target.reset();
 });
 
+function generateUniqueId(){
+    return Date.now().toString();
+}
+
 function displayUser(users){
     const userOutput = document.querySelector('#user-output')
     userOutput.innerHTML = '';
@@ -43,3 +47,5 @@ function displayUser(users){
     })
     userOutput.appendChild(userElement)
 }
+
+function
