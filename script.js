@@ -17,4 +17,6 @@ document.querySelector('#form').addEventListener('submit', (e) => {
     }
 
     taskList.push(newUser);
+    displayUser();
+    e.target.reset();
 })
