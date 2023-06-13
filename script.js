@@ -31,6 +31,9 @@ function displayUser(users){
         userElement.innerHTML = `
         
         <div class='card' id='${user.id}'> <!-- Add the ID to the user's card -->
+        <div class='img-list'></div>
+        
+        </div>
         `;
     })
 }
