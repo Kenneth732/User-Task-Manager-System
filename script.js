@@ -41,4 +41,5 @@ function displayUser(users){
         </div>
         `;
     })
+    userOutput.appendChild(userElement)
 }
