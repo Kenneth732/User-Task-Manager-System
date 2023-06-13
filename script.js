@@ -1,4 +1,4 @@
-let taskList = [];
+let userList = [];
 
 document.querySelector('#form').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -48,4 +48,15 @@ function displayUser(users){
     userOutput.appendChild(userElement)
 }
 
-function
+// Function to delete a user
+function deleteUser(userId) {
+    // Find the index of the user in the userList array based on the ID
+    const userIndex = userList.findIndex(user => user.id === userId);
+
+    if (userIndex !== -1) {
+        // Remove the user from the userList array
+        userList.splice(userIndex, 1);
+        // Call the displayUsers function to update the user list
+        displayUser(userList);
+    }
+}
