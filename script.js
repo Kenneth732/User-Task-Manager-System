@@ -5,4 +5,9 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 
     let name = e.target.name.value;
     let img = e.target.img.value;
+
+    if(name.trim() === '' || img.trim() === ''){
+        alert('Please enter both name and image URL');
+        return;
+    }
 })
