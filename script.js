@@ -31,8 +31,13 @@ function displayUser(users){
         userElement.innerHTML = `
         
         <div class='card' id='${user.id}'> <!-- Add the ID to the user's card -->
-        <div class='img-list'></div>
-        
+          <div class='img-list'>
+            <img src="${user.img}" />
+          </div>
+          <h3>Name: ${user.name}</h3>
+          <button onclick='deleteUser("${user.id}")'>Delete</button> <!-- Add a delete button -->
+          <button onclick='editUser("${user.id}")'>Edit</button> <!-- Add an edit button -->
+          <button onclick='updateUser("${user.id}")'>Update</button> <!-- Add an update button -->
         </div>
         `;
     })
