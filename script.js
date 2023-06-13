@@ -26,6 +26,11 @@ function displayUser(users){
     userOutput.innerHTML = '';
 
     users.map((user) => {
+        const userElement = document.createElement('div');
+        userElement.className = 'userElement';
+        userElement.innerHTML = `
         
+        
+        `;
     })
 }
