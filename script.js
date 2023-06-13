@@ -10,4 +10,9 @@ document.querySelector('#form').addEventListener('submit', (e) => {
         alert('Please enter both name and image URL');
         return;
     }
+    let newUser = {
+        id: generateUniqueId(),
+        name: name,
+        img: img
+    }
 })
