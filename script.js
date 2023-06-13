@@ -30,7 +30,7 @@ function displayUser(users){
         userElement.className = 'userElement';
         userElement.innerHTML = `
         
-        
+        <div class='card' id='${user.id}'> <!-- Add the ID to the user's card -->
         `;
     })
 }
